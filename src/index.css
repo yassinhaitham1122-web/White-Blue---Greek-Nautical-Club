@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-arabic: "Cairo", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  html[dir="rtl"] {
+    font-family: var(--font-arabic);
+  }
+
+  html[dir="rtl"] .font-serif {
+    font-family: var(--font-arabic);
+    font-weight: 700;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0F2C59;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00A8CC;
+  }
+}
+
+/* Nautical Greek subtle geometric wave motif */
+.bg-greek-pattern {
+  background-color: #0F2C59;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

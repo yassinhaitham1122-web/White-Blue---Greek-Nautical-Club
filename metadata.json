@@ -1,0 +1,6 @@
+{
+  "name": "White & Blue - Greek Nautical Club",
+  "description": "Authentic Greek & Mediterranean Seafood with a Panoramic Harbor View of Qaitbay Castle inside the Greek Nautical Club, Alexandria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
